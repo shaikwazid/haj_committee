@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haj Committee of Andhra Pradesh</title>
+
+    <!-- Template Stylesheet -->
+    <link href="./assets/css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/fontawesome/fontawesome-free-6.5.1-web/css/all.css">
+    <link rel="stylesheet" href="./assets/Fonts/poppins/stylesheet.css">
+    <link rel="stylesheet" href="./assets/Fonts/latofont/stylesheet.css">
+    <link rel="stylesheet" href="./assets/Ramaraja_fonts/stylesheet.css">
+    <link rel="stylesheet" href="./assets/Fonts/Sujatha/stylesheet.css">
+    <link rel="stylesheet" href="./assets/Fonts/Reactive_anchor/stylesheet.css">
+    <link rel="stylesheet" href="./assets/Fonts/bahnscript/stylesheet.css">
+ 
+    <!-- owl_carosel -->
+    <link rel="stylesheet" href="./assets/owlcarousel/owl.carousel.min.css">
+     <link rel="stylesheet" href="./assets/datatables/dataTables.bootstrap5.css">
+
+</head>
+
+<body  >
+    
+
+
+
+    <div class="color-switcher">
+        <div class="switcher-btn">
+          <!-- <i class="fas fa-cog"></i> -->
+          <!-- <i class="fa-solid fa-screwdriver-wrench"></i> -->
+          <!-- <i class="fa-solid fa-paintbrush"></i> -->
+          <span><img src="./assets/images/icons/palette.png" class="shadow-lg" width="20px" alt=""></span>
+        </div>
+        <h3>select color</h3>
+        <div class="theme-buttons-container">
+          <!-- <span class="theme-buttons" id="light" onclick="switchTheme('light')" data-color="#8e44ad"></span> -->
+          <span class="theme-buttons" id="brown" onclick="switchTheme('brown')" data-color="rgb(84 43 0)"></span>
+          <span class="theme-buttons" id="dark" onclick="switchTheme('dark')" data-color="#ad8c44"></span>
+          <span class="theme-buttons" id="modern" onclick="switchTheme('modern')" data-color="#6c44ad"></span>
+          <span class="theme-buttons" id="retro" onclick="switchTheme('retro')" data-color="#446ead"></span>
+          <span class="theme-buttons" id="high-contrast" onclick="switchTheme('high-contrast')" data-color="#212120"></span>
+          <span class="theme-buttons" id="green" onclick="switchTheme('green')" data-color="rgb(0 96 66)"></span>
+       
+        </div>
+      </div>
+      <div class="header-top  ">
+        <div class="container">
+        
+
+            <div class="row align-items-center">
+                <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 col-12 py-lg-0 py-1 ">
+
+                    
+                    <div class="share-links d-flex dropdown justify-content-lg-start justify-content-center d-none">
+                       
+                        <ul class="social-custom list-inline mb-0" aria-labelledby="social-dropdown">
+
+                            <li class="list-inline-item text-white pe-3">
+                                 <div class="dropdown ">
+                                <span class=" dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+                                    <svg class="svg-inline--fa fa-wheelchair fs-6" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="wheelchair" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M192 96a48 48 0 1 0 0-96 48 48 0 1 0 0 96zM120.5 247.2c12.4-4.7 18.7-18.5 14-30.9s-18.5-18.7-30.9-14C43.1 225.1 0 283.5 0 352c0 88.4 71.6 160 160 160c61.2 0 114.3-34.3 141.2-84.7c6.2-11.7 1.8-26.2-9.9-32.5s-26.2-1.8-32.5 9.9C240 440 202.8 464 160 464C98.1 464 48 413.9 48 352c0-47.9 30.1-88.8 72.5-104.8zM259.8 176l-1.9-9.7c-4.5-22.3-24-38.3-46.8-38.3c-30.1 0-52.7 27.5-46.8 57l23.1 115.5c6 29.9 32.2 51.4 62.8 51.4h5.1c.4 0 .8 0 1.3 0h94.1c6.7 0 12.6 4.1 15 10.4L402 459.2c6 16.1 23.8 24.6 40.1 19.1l48-16c16.8-5.6 25.8-23.7 20.2-40.5s-23.7-25.8-40.5-20.2l-18.7 6.2-25.5-68c-11.7-31.2-41.6-51.9-74.9-51.9H282.2l-9.6-48H336c17.7 0 32-14.3 32-32s-14.3-32-32-32H259.8z"></path></svg><!-- <i class="fa fa-wheelchair fs-6 " aria-hidden="true"></i> Font Awesome fontawesome.com -->
+                                </span>
+                    
+                    
+                                <ul class="dropdown-menu text-center" style="min-width: 40px;">
+                                    <li class="nav-item " style="list-style: none;">
+                                        <span id="btn-increase" class="btn1  fw-medium ">A+</span>
+                                      
+                                    </li>
+                                    <li class="nav-item " style="list-style: none;">
+                                        <span id="btn-orig" class="btn1  fw-medium">A</span>
+                                           
+                                    </li>
+                                    <li class="nav-item " style="list-style: none;">
+                                        <span id="btn-decrease" class="btn1 active  fw-medium">A-</span>
+                                       
+                                    </li>
+                    
+                    
+                                    <style>
+                                        #btn-decrease {
+                                            font-size: 12px;
+                                        }
+                    
+                                        #btn-orig {
+                                            font-size: 14px;
+                                        }
+                    
+                                        #btn-increase {
+                                            font-size: 12px;
+                                        }
+                                    </style>
+                                </ul>
+                            </div></li>
+                            
+                        </ul>
+
+                        <div class="ms-3">
+                            <div class="">
+                                <div id="google_translate_element"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 col-lg-8 col-sm-13 col-xs-12 px-lg-0 text-end">
+
+                     <div class="">
+                        <ul class="m-0 social-custom">
+                            <li class="list-inline-item  "><a target="_blank" href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li class="list-inline-item "><a target="_blank" href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+                            <li class="list-inline-item "><a target="_blank" href=""><i class="fa-brands fa-youtube"></i></a></li>
+                            <li class="list-inline-item "><a target="_blank" href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        </ul>
+                     </div>
+                 
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="">
+        <div class="">
+            <!-- help_desk_start -->
+            <div class="helpdesk d-none">
+                <div class="helpinnerdiv">
+                    <div class="helpdesktext"><br>H<br>E<br>L<br>P<br><br>D<br>E<br>S<br>k</div>
+                    <div class="helpdesktext2" style="display: none;"><br>H<br>E<br>L<br>P<br><br>D<br>E<br>S<br>k</div>
+                  <div class="helpdetails">
+                        <h1>CALL US NOW</h1>
+                        <p class="m-0">18004257873</p>
+                        <p class="m-0">0866-2471786</p>
+                        <p class="m-0">APDPMS: +91 9398733100</p>
+                        <h1>SEND US A MAIL</h1>
+                        <p class="m-0">aphajcommittee@gmail.com</p>
+                       
+                    </div>
+                </div>
+            </div>
+            <!-- help_desk_end -->
+        </div>
+
+        <section class="">
+            <div class="header_bg card border-0 ">
+                <div class="container-fluid ">
+
+                   
+                        <div class="row py-2 align-items-ceter menu-with-card ">
+                            <div class="col-lg-3">
+                                <div class="d-flex gap-3 align-items-center">
+                                    <div class="=text-center aplogo d-none d-xl-block">
+                                        <img src="./assets/images/persons/AP CM.jpg" class="top_images_one" width="75" alt="Image">
+                                    </div>
+                                    <div>
+                                        <p class="m-0 fw-bold" style="font-size:13px">Sri Nara Chandrababu Naidu,</p>
+                                        <p class="m-0" style="font-weight: 500;font-size:12px">Hon'ble Chief Minister&nbsp;of&nbsp;AP.</p>
+                                       </div>
+                                
+                                </div>
+                            </div>
+                         
+                            <div class="col-lg-6 text-center middle-menu">
+
+                                <div class="d-flex gap-2 align-items-center justify-content-center">
+                                <div class="=text-center aplogo d-none d-xl-block">
+                                    <img src="./assets/images/AP_LOGO.png" class="" width="70" alt="Image">
+                                </div>
+                                <div class="">
+                                    <div class="heading text-uppercase">Haj Committee of Andhra Pradesh</div>
+                                    <div class="heading1 hidden-xs">آندھرا پردیش کی حج کمیٹی</div>
+                                    <!-- <div class="">
+                                        <img src="http://13.127.32.89:81/dtcp/assets/images/dtcp_header_img.png"
+                                            class="img-fluid" width="100%" alt="Image">
+
+                                    </div> -->
+                                 
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-lg-3 px-lg-0">
+                                <div class="d-flex gap-3 align-items-center">
+                                    <div class="=text-center aplogo d-none d-xl-block">
+                                        <img src="./assets/images/persons/minister.png" class="top_images_one" width="75" style="height: 74px;" alt="Image">
+                                        <!-- <img src="./assets/images/persons/farooq.png" class="" width="75" style="height: 74px;" alt="Image"> -->
+                                    </div>
+                                    <div>
+                                        <p class="m-0 fw-bold" style="font-size:13px">Sri Nasyam Mohammed Farooq,</p>
+                                        <p class="m-0" style="font-weight: 500;font-size:12px">Hon'ble Minister of Law & Justice, Minority Welfare AP.</p>
+                                       </div>
+                                
+                                </div>
+                            </div>
+
+                        </div>
+                       
+                   
+                     
+                
+
+
+                </div>
+            </div>
+
+        </section>
+        <!-- ending_header -->
+
+        <!-- Nava_Section_Start -->
+        <section>
+            <!-- Navbar Start -->
+
+            <div id="header-area" class="header_area">
+                <div class="header_bottom">
+                    <div class="container-fluid">
+                        <div class="row">
+                  <nav role="navigation" class="navbar navbar-expand-sm  navbar-default navbar-light mainmenu">
+                                <div class="navbar-header">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                                </div>
+                                <!-- Collection of nav links and other content for toggling -->
+                                <div id="navbarCollapse" class="collapse navbar-collapse">
+                                    <ul id="fresponsive" class="nav mx-auto navbar-nav dropdown">
+                                        <li class="active"><a href="./index.html">Home</a></li>
+                                        <li class="dropdown"><a data-bs-toggle="dropdown" class="dropdown-toggle">Haj 1446 (H) – 2025<span class="caret"></span></a>
+                                            <ul class=" dropdown-menu">
+                                              <li><a href="./assets/images/PDFs/Announcement-of-Haj-Policy-2025-regarding.pdf" target="_blank">Haj Policy 2025</a></li>
+                                              <li><a href="./assets/images/PDFs/english-guidlines-2025.pdf" target="_blank">Haj Guideliness 2025</a></li>
+                                              <li><a href="https://hajcommittee.gov.in/Registration-Closed/pilgrim" target="_blank">Registration Form</a></li>
+                                              <li><a href="https://hajcommittee.gov.in/login" target="_blank">Pilgrim Login</a></li>
+                                              <li><a href="./assets/images/PDFs/ENGLISH_HAJ_ANNOUNCEMENT_2025.pdf" target="_blank">Announcement in English</a></li>
+                                              <li><a href="./assets/images/PDFs/HINDI_HAJ_NNOUNCEMENT2025.pdf" target="_blank">Announcement in Hindi</a></li>
+                                              <li><a href="./assets/images/PDFs/URDUANNOUNCEMENTFORHAJ-2025.pdf" target="_blank">Announcement in Urdu</a></li>
+                                              <li><a href="./assets/images/PDFs/english-guidlines-2025.pdf" target="_blank">Guidelines for Haj – 2025 (Hijri – 1446)</a></li>
+                                             
+                                            </ul>
+                                          </li>
+                                        <li><a href="https://hajcommittee.gov.in/Registration-Closed/pilgrim" target="_blank">Registration Form</a></li>
+                                        <li><a href="https://hajcommittee.gov.in/login" target="_blank">Pilgrim Login</a></li>
+
+                                        <li><a href="./circulars.html">Circulars</a></li>
+                                       
+                                        <li class="dropdown"><a data-bs-toggle="dropdown" class="dropdown-toggle">Procedures<span class="caret"></span></a>
+                                            <ul class=" dropdown-menu">
+                                                <li><a href="./assets/images/PDFs/a2.pdf" target="_blank">Guidelines For UMRAH</a></li>
+                                                <li><a href="./assets/images/PDFs/a2.pdf" target="_blank">Guidelines For HAJ</a></li>
+                                                <li><a href="#">Slot Booking For Riaz Ul Jannah</a></li>
+                                                <li><a href="./assets/images/PDFs/a1.pdf" target="_blank">Hospital Services</a></li>
+                                            
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown"><a data-bs-toggle="dropdown" class="dropdown-toggle">District Haj Societies <span class="caret"></span></a>
+                                            <ul class=" dropdown-menu">
+                                                <li><a href="./district_haj_society_list.html">District Haj Societies  List</a></li>
+                                                <li><a href="./district_haj_societys.html">District Haj Societies Programs</a></li>
+                                                <li><a href="./districts_piligrams_list.html">District Pilgrims List</a></li>
+                                            
+                                            </ul>
+                                        </li>
+                                     
+                                        <li class="dropdown"><a data-bs-toggle="dropdown" class="dropdown-toggle">Previous Haj<span class="caret"></span></a>
+                                            <ul class=" dropdown-menu">
+                                            
+                                          
+                                                <li>
+                                                <a href="#" data-bs-toggle="dropdown" class="dropdown-toggle">Haj 1445 (H) – 2024 <span class="caret"></span></a>
+                                                <ul class=" dropdown-menu">
+                                                    <li><a href="./assets/images/PDFs/haj2024/Announcement_of_Haj_Policy_2024.pdf">Haj Policy 2024</a></li>
+                                                    <li><a href="./tender_noticess.html" target="_blank">TENDER NOTICE</a></li>
+                                                    <li><a href="https://www.hajcommittee.gov.in/login" target="_blank">Pilgrim Login</a></li>
+                                                    <li><a href="#">Circulars Haj 2024</a></li>
+                                                    <li><a href="#">Haj Guideliness 2024</a></li>
+                                                    <li><a href="#">Announcement for Haj 2024 in Urdu</a></li>
+                                                    <li><a href="#">Announcement for Haj 2024 in Hindi</a></li>
+                                                </ul>
+                                                </li>
+
+
+                                                <li>
+                                                <a href="#" data-bs-toggle="dropdown" class="dropdown-toggle">Haj 1444 (H) – 2023 <span class="caret"></span></a>
+                                                <ul class=" dropdown-menu">
+                                                    <li><a href="#">Haj Policy for Haj-2023</a></li>
+                                                    <li><a href="#">Online Application Form</a></li>
+                                                    <li><a href="#">Press Release</a></li>
+                                                    <li><a href="#">Haj Pilgrim Login</a></li>
+                                            
+                                                    
+                                                </ul>
+                                                </li>
+                                                <li>
+                                                <a href="#" data-bs-toggle="dropdown" class="dropdown-toggle">Haj 1443 (H) – 2022 <span class="caret"></span></a>
+                                                <ul class=" dropdown-menu">
+                                                    <li><a href="#">Haj Announcement</a></li>
+                                                    <li><a href="#">CIRCULARS-2022</a></li>
+                                                    <li><a href="#">LIVE Programmes</a></li>
+                                                    <li><a href="#">LIVE Programmes</a></li>
+                                                    <li><a href="#">Guidelines</a></li>
+                                                    <li><a href="#">HAJ GUIDE</a></li>
+                                            
+                                                    
+                                                </ul>
+                                                </li>
+                                                <li><a href="#">Haj 1442 (H) – 2021</a></li>
+                                                <li>
+                                                <a href="#" data-bs-toggle="dropdown" class="dropdown-toggle">Haj 1441 (H) – 2020 <span class="caret"></span></a>
+                                                <ul class=" dropdown-menu">
+                                                    <li><a href="#">Haj Announcement</a></li>
+                                                    <li><a href="#">How to fill online HAF</a></li>
+                                                    <li><a href="#">CIRCULARS</a></li>
+                                                    <li><a href="#">Pay-in-Slip (SBI)</a></li>
+                                                    <li><a href="#">Pay-in-Slip (UBI)</a></li>
+                                                    <li><a href="#">Haj Bulletin</a></li>
+                                            
+                                                    
+                                                </ul>
+                                                </li>
+                                                <li>
+                                                <a href="#" data-bs-toggle="dropdown" class="dropdown-toggle">Haj 1440 (H) – 2019<span class="caret"></span></a>
+                                                <ul class=" dropdown-menu">
+                                                    <li><a href="#">Gallery: Hajj 2019</a></li>
+                                                    <li><a href="#">CIRCULARS FOR 2019</a></li>
+                                                    <li><a href="#">Apply Online</a></li>
+                                                    <li><a href="#">Haj Announcement</a></li>
+                                                    <li><a href="#">Haj Form Download</a></li>
+                                                    <li><a href="#">Guidelines</a></li>
+                                                    <li><a href="#">Pay-in-slip (SBI)</a></li>
+                                                    <li><a href="#">Pay-in-slip (UBI)</a></li>
+                                                    <li><a href="#">Haj 2019</a></li>
+                                                    <li><a href="#">News</a></li>
+                                                    <li><a href="#">District Hajis List  2019</a></li>
+                                            
+                                                    
+                                                </ul>
+                                                </li>
+                                                
+                                            </ul>
+                        </li>
+                        <li><a href="./assets/images/PDFs/english-guidlines-2025.pdf" target="_blank">Guidelines-2025</a></li>
+                       
+
+                                        
+                                        <!-- <li class="dropdown"><a data-bs-toggle="dropdown" class="dropdown-toggle">Submenu 1<span class="caret"></span></a>
+                          <ul class=" dropdown-menu">
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li>
+                              <a href="#" data-bs-toggle="dropdown" class="dropdown-toggle">Submenu 2<span class="caret"></span></a>
+                              <ul class=" dropdown-menu">
+                                <li><a href="#">Lorem ipsum</a></li>
+                                <li><a href="#">Lorem ipsum</a></li>
+                                <li>
+                                  <a href="#" data-bs-toggle="dropdown" class="dropdown-toggle">Submenu 3<span class="caret"></span></a>
+                                  <ul class=" dropdown-menu">
+                                    <li><a href="#">Lorem ipsum</a></li>
+                                    <li><a href="#">Lorem ipsum</a></li>
+                                  </ul>
+                              </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li> -->
+                                        <li><a href="./contact.html">Contact</a></li> 
+                                        <li><a href="./login.html">Login</a></li>       
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div> 
+                    </div>            
+                </div><!-- /.header_bottom -->
+              
+            </div>
+            <!-- Navbar End -->
+
+        
+
+        </section>
+    </div>
+        <!-- Nava_Section_end -->
+
+
+<!-- main_contenet_start -->
+
+
+
+    <!-- Contact Section -->
+    <section  class=" my-4">
+
+        <!-- Section Title -->
+        <div class="container section-title" >
+          <h2 class="m-0">Circulars </h2>
+  
+          <div class="line_block">
+            <span class="line"></span>
+            <span><img src="./assets/images/small_masij.png" alt="" width="25"></span>
+            <span class="line"></span>
+          </div>
+
+          <div class="breadcrumb_block d-flex justify-content-center">
+            <nav aria-label="breadcrumb " class="first  d-md-flex" >
+              <ol class="breadcrumb indigo lighten-6 first-1   ">
+                 <li class="breadcrumb-item "><a class="black-text active-2" href="#"><img  id ="home" src="./assets/images/icons/house.png" class="me-1 mb-1 "  width="19" height="15"><span  >HOME</span></a><img class="ml-md-3 ml-1" src="./assets/images/icons/chevron-right.png" width="20" height="20"> </li>
+                 <li class="breadcrumb-item  mr-0 pr-0"><a class="black-text active-1 active-2" href="#"><span >Circulars</span></a> </li>
+             </ol>
+         </nav>
+          </div>
+        </div><!-- End Section Title -->
+  
+
+        <div class="container">
+          <div class="card border-0 cb_card">
+            <div class="card-header c_header">
+
+              <div class=" ">
+                <!-- <p class="c_line m-0"></p> -->
+                <h5 class="m-0 text-white">Circulars Haj 2025</h5>
+                <div class="title-shape"></div>
+              </div>
+             
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered cus-table">
+                    <thead>
+                        <tr>
+                            <th class="text-center">S.NO.</th>
+                            <th>Circular No</th>
+                            <th>Circular Date</th>
+                            <th class="text-center">Subject</th>
+                            <th>Dowload</th>
+                            </tr>
+                    </thead>
+                    <tbody>
+                   
+                      <tr>
+                        <td class="text-center">1</td>
+                        <td>12</td>
+                        <td>2024-07-03</td>
+                        <td class="">
+                         
+                           Announcement of Haj-2025 is expected to be made in the last week of July or first week of August 2024
+                        </td>
+                        <td class="text-center">
+                          <div class="pdf_bg">
+                            <img src="./assets/images/icons/pdf.svg" width="16px" height="16px" alt="">
+                          </div>
+                        </td>
+
+                      </tr>
+                      <tr>
+                        <td class="text-center">2</td>
+                        <td>232</td>
+                        <td>2024-07-03</td>
+                        <td class="">  Action Plan for Haj – 2025 (Hijri – 1446)</td>
+                        <td class="text-center">
+                          <div class="pdf_bg">
+                            <img src="./assets/images/icons/pdf.svg" width="16px" height="16px" alt="">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">3</td>
+                        <td>324</td>
+                        <td>2024-07-03</td>
+                        <td class=""> Announcement of Haj-2025 is expected to be made in the last week of July or first week of August 2024</td>
+                        <td class="text-center">
+                          <div class="pdf_bg">
+                            <img src="./assets/images/icons/pdf.svg" width="16px" height="16px" alt="">
+                          </div>
+                        </td>
+                     
+                      </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+            </div>
+          </div>
+         
+        </div>
+      
+  
+      </section><!-- /Contact Section -->
+
+
+<!-- main_contenet_end-->
+ 
+
+    <!-- footer_start -->
+
+
+
+    <footer id="footer" class="footer accent-background">
+
+        <div class="container footer-top">
+          <div class="row gy-4">
+            <div class="col-lg-5 col-md-12 footer-about">
+              <a href="index.html" class="logo d-flex align-items-center">
+                <span class="sitename">Islamic Quotes</span>
+              </a>
+              <p>“Perform Haj in your youth, for on the Day of Judgement Allah shall bestow His shade on the young who worship Him in their youth.”</p>
+              <div class="social-links d-flex mt-4">
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+              
+              </div>
+            </div>
+    
+            <div class="col-lg-2 col-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><a href="#"><span class="pe-2"><i class="fa-solid fa-kaaba"></i></span> AP online</a></li>
+                <li><a href="#"><span class="pe-2"><i class="fa-solid fa-kaaba"></i></span> NMFC Org</a></li>
+                <li><a href="#"><span class="pe-2"><i class="fa-solid fa-kaaba"></i></span> Services</a></li>
+                <li><a href="#"><span class="pe-2"><i class="fa-solid fa-kaaba"></i></span> Minority Affairs.</a></li>
+           
+              </ul>
+            </div>
+    
+            <div class="col-lg-2 col-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li><a href="#"><span class="pe-2"><i class="fa-solid fa-kaaba"></i></span> Service One</a></li>
+                <li><a href="#"><span class="pe-2"><i class="fa-solid fa-kaaba"></i></span> Service Two</a></li>
+                <li><a href="#"><span class="pe-2"><i class="fa-solid fa-kaaba"></i></span> Service Three</a></li>
+                <li><a href="#"><span class="pe-2"><i class="fa-solid fa-kaaba"></i></span> Service Four</a></li>
+              
+              </ul>
+            </div>
+    
+            <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+              
+              <h4>Visiters Count</h4>
+              <div class="d-flex gap-3 align-items-center">
+                <!-- <div> count:</div> -->
+                <div class="website-counter"></div>
+              </div>
+            
+            </div>
+    
+          </div>
+        </div>
+    
+        <div class="container copyright text-center mt-4">
+          <p>© 2014-2025<span>Copyright</span> <strong class="px-1 sitename">AP State Haj Committee</strong> <span>All Rights Reserved</span></p>
+          
+        </div>
+    
+      </footer>
+
+    <!-- footer_end -->
+
+
+
+    <script src="./assets/Jquery/jquery.min.js"></script>
+    <script src="./assets/bootstrap/Js/bootstrap.bundle.min.js"></script>
+
+    <script src="./assets/fontawesome/fontawesome-free-6.5.1-web/js/all.js"></script>
+
+    <!-- owl_carousel_js   -->
+    <script src="./assets/owlcarousel/owl.carousel.min.js"></script>
+     <!-- data_tables  -->
+      <script src="./assets/datatables/dataTables.js"></script>
+      <script src="./assets/datatables/dataTables.bootstrap5.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            $(".nav-item .nav-link").click(function () {
+
+                $(".nav-item .nav-link").removeClass("active");
+                $(this).addClass("active");
+            });
+        });
+    </script>
+
+
+
+
+<!-- nav_bar_script start -->
+    <script>
+       (function($){
+    $('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
+      if (!$(this).next().hasClass('show')) {
+      $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+      }
+      var $subMenu = $(this).next(".dropdown-menu");
+      $subMenu.toggleClass('show');
+
+      $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+      $('.dropdown-submenu .show').removeClass("show");
+      });
+
+      return false;
+    });
+  })(jQuery)
+    </script>
+
+<!-- nav_bar_scriptend  -->
+
+
+    <!-- help_Desk_script -->
+    <script>
+        $(document).ready(function () {
+
+
+
+
+            $(".helpdesktext2").css("display", "none");
+
+            $(".helpdesktext").click(function () {
+                $(".helpinnerdiv").animate({ marginRight: '0' });
+                $(".helpdesktext").css("display", "none");
+
+                $(".helpdesktext2").css("display", "block");
+            });
+
+            $(".helpdesktext2").click(function () {
+                $(".helpinnerdiv").animate({ marginRight: '-231px' });
+                $(".helpdesktext").css("display", "block");
+                $(".helpdesktext2").css("display", "none");
+            });
+
+        });
+    </script>
+
+
+
+
+
+
+    <!-- animation_scrooling_script -->
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var
+                    elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+                if (elementTop < windowHeight -
+                    elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+                // else {
+                //  reveals[i].classList.remove("active");
+                // }
+
+
+            }
+        }
+        window.addEventListener("scroll", reveal);
+    </script>
+
+
+    <!-- owlCarousel -->
+    <script>
+        $(document).ready(function () {
+
+
+
+            //   $(document).ready(function () {
+            $('#main-banner-slide').owlCarousel({
+                loop: true,
+                margin: 17,
+                nav: true,
+                navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+                dots: false,
+                autoplay: true,
+                // animateOut: 'fadeOut',
+                autoplayTimeout: 5000,
+                // autoplayHoverPause:true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    },
+                    1200: {
+                        items: 1
+                    }
+                }
+            });
+            // });
+
+        });
+
+
+        $(".nav-item .nav-link").click(function () {
+
+            $(".nav-item .nav-link").removeClass("active");
+            $(this).addClass("active");
+        });
+
+
+    </script>
+    <script>
+        var $affectedElements = $("p, h1, h2, h3, h4, h5, h6, a"); // Can be extended, ex. $("div, p, span.someClass")
+
+        // Storing the original size in a data attribute so size can be reset
+        $affectedElements.each(function () {
+            var $this = $(this);
+            $this.data("orig-size", $this.css("font-size"));
+        });
+
+        $("#btn-increase").click(function () {
+            changeFontSize(1);
+        })
+
+        $("#btn-decrease").click(function () {
+            changeFontSize(-1);
+        })
+
+        $("#btn-orig").click(function () {
+            $affectedElements.each(function () {
+                var $this = $(this);
+                $this.css("font-size", $this.data("orig-size"));
+            });
+        })
+
+        function changeFontSize(direction) {
+            $affectedElements.each(function () {
+                var $this = $(this);
+                $this.css("font-size", parseInt($this.css("font-size")) + direction);
+            });
+        }
+
+    </script>
+
+<script>
+    document.querySelector(".switcher-btn").onclick = () => {
+document.querySelector(".color-switcher").classList.toggle("active");
+};
+    function switchTheme(theme) {
+        if (theme === 'light') {
+            // cus styles start
+            document.documentElement.style.setProperty('--textwhite', '#000000');
+            document.documentElement.style.setProperty('--textblack', '#000');
+            document.documentElement.style.setProperty('--themecolor', '#000000');
+            document.documentElement.style.setProperty('--themebgcolor', '#ffffff');
+            document.documentElement.style.setProperty('--linkcolor', '#000000');
+            document.documentElement.style.setProperty('--dropbg', '#f2f2f2');
+            document.documentElement.style.setProperty('--dropcolor', '#000000');
+            document.documentElement.style.setProperty('--linkhover', '#f2f2f2');
+            document.documentElement.style.setProperty('--backgroundlg', 'linear-gradient(90deg, rgb(255 255 255) 0%, rgb(255 255 255 / 89%) 43%)');
+            document.documentElement.style.setProperty('--beforebgcolor', '#e7e2e2');
+            document.documentElement.style.setProperty('--secbgcolor', 'rgb(231 226 226)');
+            document.documentElement.style.setProperty('--sectitleborder', '#f2f2f2');
+        } else if (theme === 'dark') {
+            // cus styles start
+            document.documentElement.style.setProperty('--textwhite', '#ffffff');
+            document.documentElement.style.setProperty('--textblack', '#000');
+            document.documentElement.style.setProperty('--themecolor', '#000000');
+            document.documentElement.style.setProperty('--themebgcolor', '#000000');
+            document.documentElement.style.setProperty('--linkcolor', '#ffffff');
+            document.documentElement.style.setProperty('--dropbg', '#000000');
+            document.documentElement.style.setProperty('--dropcolor', '#ffffff');
+            document.documentElement.style.setProperty('--linkhover', '#565150ab');
+            document.documentElement.style.setProperty('--backgroundlg', 'linear-gradient(90deg, rgb(0 0 0) 0%, rgb(147 146 145) 43%)');
+            document.documentElement.style.setProperty('--beforebgcolor', '#000000');
+            document.documentElement.style.setProperty('--secbgcolor', 'rgb(0 0 0 / 12%)');
+            document.documentElement.style.setProperty('--sectitleborder', '#000000');
+        } else if (theme === 'modern') {
+            // cus styles start
+            document.documentElement.style.setProperty('--textwhite', '#ffffff');
+            document.documentElement.style.setProperty('--textblack', '#000');
+            document.documentElement.style.setProperty('--themecolor', '#b41515');
+            document.documentElement.style.setProperty('--themebgcolor', '#b41515');
+            document.documentElement.style.setProperty('--linkcolor', '#ffffff');
+            document.documentElement.style.setProperty('--dropbg', '#b41515');
+            document.documentElement.style.setProperty('--dropcolor', '#ffffff');
+            document.documentElement.style.setProperty('--linkhover', '#450a04ab');
+            document.documentElement.style.setProperty('--backgroundlg', 'linear-gradient(90deg, rgba(180,21,21,1) 0%, rgba(237,172,172,1) 43%)');
+            document.documentElement.style.setProperty('--beforebgcolor', '#b41515');
+            document.documentElement.style.setProperty('--secbgcolor', 'rgb(245 222 222 / 40%)');
+            document.documentElement.style.setProperty('--sectitleborder', '#b41515');
+        } else if (theme === 'retro') {
+            // cus styles start
+            document.documentElement.style.setProperty('--textwhite', '#ffffff');
+            document.documentElement.style.setProperty('--textblack', '#000');
+            document.documentElement.style.setProperty('--themecolor', '#f9b800');
+            document.documentElement.style.setProperty('--themebgcolor', '#f9b800');
+            document.documentElement.style.setProperty('--linkcolor', '#ffffff');
+            document.documentElement.style.setProperty('--dropbg', '#f9b800');
+            document.documentElement.style.setProperty('--dropcolor', '#ffffff');
+            document.documentElement.style.setProperty('--linkhover', '#967a09');
+            document.documentElement.style.setProperty('--backgroundlg', 'linear-gradient(90deg, rgba(255,204,0,1) 0%, rgba(245,223,135,1) 43%)');
+            document.documentElement.style.setProperty('--beforebgcolor', '#f9b800');
+            document.documentElement.style.setProperty('--secbgcolor', 'rgb(251 237 179 / 46%)');
+            document.documentElement.style.setProperty('--sectitleborder', '#f9b800');
+        } else if (theme === 'high-contrast') {
+
+            // cus styles start
+            document.documentElement.style.setProperty('--textwhite', '#ffffff');
+            document.documentElement.style.setProperty('--textblack', '#000');
+            document.documentElement.style.setProperty('--themecolor', '#ff1802');
+            document.documentElement.style.setProperty('--themebgcolor', '#ff1802');
+            document.documentElement.style.setProperty('--linkcolor', '#ffffff');
+            document.documentElement.style.setProperty('--dropbg', '#ff1802');
+            document.documentElement.style.setProperty('--dropcolor', '#ffffff');
+            document.documentElement.style.setProperty('--linkhover', '#450a04ab');
+            document.documentElement.style.setProperty('--backgroundlg', 'linear-gradient(90deg, rgba(255,24,2,1) 0%, rgba(213,170,166,1) 43%)');
+            document.documentElement.style.setProperty('--beforebgcolor', '#ff1802');
+            document.documentElement.style.setProperty('--secbgcolor', 'rgb(241 203 199 / 41%)');
+            document.documentElement.style.setProperty('--sectitleborder', '#ff1802');
+        }else if (theme === 'green') {
+
+            // cus styles start
+            document.documentElement.style.setProperty('--textwhite', '#ffffff');
+            document.documentElement.style.setProperty('--textblack', '#000');
+            document.documentElement.style.setProperty('--themecolor', 'rgb(0 96 66)');
+            document.documentElement.style.setProperty('--themebgcolor', 'rgb(0 96 66)');
+            document.documentElement.style.setProperty('--linkcolor', '#ffffff');
+            document.documentElement.style.setProperty('--dropbg', 'rgb(0 96 66)');
+            document.documentElement.style.setProperty('--dropcolor', '#ffffff');
+            document.documentElement.style.setProperty('--linkhover', '#ffffff');
+            document.documentElement.style.setProperty('--backgroundlg', 'linear-gradient(90deg, rgb(0 96 66) 0%, rgb(0 96 66 / 27%))');
+            document.documentElement.style.setProperty('--beforebgcolor', 'rgb(0 96 66)');
+            document.documentElement.style.setProperty('--secbgcolor', '#c2fbb454');
+            document.documentElement.style.setProperty('--sectitleborder', 'rgb(0 96 66)');
+        } else if (theme === 'brown') {
+
+            // cus styles start
+            document.documentElement.style.setProperty('--textwhite', '#ffffff');
+            document.documentElement.style.setProperty('--textblack', '#000');
+            document.documentElement.style.setProperty('--themecolor', 'rgb(84 43 0)');
+            document.documentElement.style.setProperty('--themebgcolor', 'rgb(84 43 0)');
+            document.documentElement.style.setProperty('--linkcolor', '#ffffff');
+            document.documentElement.style.setProperty('--dropbg', 'rgb(84 43 0)');
+            document.documentElement.style.setProperty('--dropcolor', '#ffffff');
+            document.documentElement.style.setProperty('--linkhover', '#ffffff');
+            document.documentElement.style.setProperty('--backgroundlg', ' linear-gradient(90deg, rgb(84 43 0) 0%, rgb(84 43 0 / 57%))');
+            document.documentElement.style.setProperty('--beforebgcolor', 'rgb(84 43 0)');
+            document.documentElement.style.setProperty('--secbgcolor', '#542b002e');
+            document.documentElement.style.setProperty('--sectitleborder', 'rgb(84 43 0)');
+        }
+    }
+</script>
+
+
+
+<!-- second_nav_bar_Script_Start -->
+ <script>
+    $(document).ready(function()
+	{
+		$('.navbar-nav li a.dropdown-toggle').click(function(e)
+		{
+			e.preventDefault();
+			$(this).parent().toggleClass('open');
+		});
+		$('[data-toggle="collapse"]').click(function()
+		{
+			var target = $(this).attr('data-bs-target');
+			$(target).toggleClass('in');
+		});
+	});
+ </script>
+<!-- second_nav_bar_Script_end -->
+
+
+
+<script>
+    var counterContainer = document.querySelector(".website-counter");
+    var resetButton = document.querySelector("#reset");
+    var visitCount = localStorage.getItem("page_view");
+  
+    // Check if page_view entry is present
+    if (visitCount) {
+      visitCount = Number(visitCount) + 1;
+      localStorage.setItem("page_view", visitCount);
+    } else {
+      visitCount = 1000; // Start from 1000 if no previous data exists
+      localStorage.setItem("page_view", 1000);
+    }
+  
+    // Function to display the counter with the same background color for all digits
+    function displayCounter(count) {
+      counterContainer.innerHTML = ''; // Clear previous counter
+      var countStr = count.toString();
+      
+      for (var i = 0; i < countStr.length; i++) {
+        var digit = document.createElement("div");
+        digit.classList.add("digit");
+        digit.innerText = countStr[i]; // Set digit value
+        counterContainer.appendChild(digit);
+      }
+    }
+  
+    displayCounter(visitCount);
+  
+    // Adding onClick event listener for reset button
+    resetButton.addEventListener("click", () => {
+      visitCount = 1000; // Reset to 1000
+      localStorage.setItem("page_view", 1000);
+      displayCounter(visitCount);
+    });
+  </script>
+
+<!-- data_Tables_Start  -->
+<script>
+  $(document).ready(function() {
+         $('table').dataTable({
+                 // searching: false,
+                     // paging: false,
+                     info: false
+           
+         });
+     // DataTable.ext.errMode = 'none';
+     }); 
+ </script>
+ 
+ 
+ <!-- data_tables_error_Script -->
+ <script>
+     $.fn.dataTable.ext.errMode = 'none'; // Disable all DataTables warnings
+ 
+ $('#DataTables_Table_0').on('error.dt', function(e, settings, techNote, message) {
+     // You can log the message to the console if you want to track the error
+     console.log('DataTable Error: ', message); // Optional: log error
+ });
+ </script>
+<!-- data_Tables_end -->
+
+
+
+
+
+</body>
+
+</html>

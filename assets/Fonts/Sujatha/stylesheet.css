@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Sujatha';
+    src: url('Sujatha.eot');
+    src: url('Sujatha.eot?#iefix') format('embedded-opentype'),
+        url('Sujatha.woff2') format('woff2'),
+        url('Sujatha.woff') format('woff'),
+        url('Sujatha.ttf') format('truetype'),
+        url('Sujatha.svg#Sujatha') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

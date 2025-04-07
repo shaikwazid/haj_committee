@@ -1,0 +1,51 @@
+.demof {
+	margin: 0px 0 25px 0;
+	padding: 10px 0;
+}
+
+.demof ul {
+	padding: 0;
+	list-style: none;
+	display: contents;
+}
+
+.demof li {
+	padding: 15px 0 15px 10px;
+	border-bottom: 1px dashed #ccc;
+}
+
+.demof li:first-child {
+	padding: 0px 0 15px 10px;
+}
+
+.demof li span {
+	color: #ffffff;
+}
+
+.demof li.odd {
+	background: #fafafa;
+}
+
+.demof li:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.demof img {
+	display: block;
+	float: left;
+	margin: 8px 2px;
+}
+
+.demof p {
+	margin: 0px;
+	margin-left: 45px;
+	color: #181818;
+    font-family: 'Source Sans Pro', sans-serif;
+	line-height: 25px;
+
+}
+.demof p a:hover {
+    color: #f4672e !important;
+}
